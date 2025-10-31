@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Thanh cam kết */
+  .top-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+  
+  /* Navbar chính */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #777;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    display: none;
+  }
+  
+  .dropdown li {
+    padding: 8px 15px;
+  }
+  
+  .dropdown li a {
+    color: black;
+    font-weight: normal;
+  }
+  
+  .menu li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Icons */
+  .icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  

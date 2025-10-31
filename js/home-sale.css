@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Thanh cam kết */
+  .top-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+  
+  /* Navbar chính */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid #eee;
+    width: 1900px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #777;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    display: none;
+  }
+  
+  .dropdown li {
+    padding: 8px 15px;
+  }
+  
+  .dropdown li a {
+    color: black;
+    font-weight: normal;
+  }
+  
+  .menu li:hover .dropdown {
+    display: block;
+  }
+  
+  /* Icons */
+  .icons a {
+    margin-left: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  
+#carouselExampleAutoplaying{
+    width: 100%;
+    max-width: 50%;
+    overflow: hidden;
+    margin-top: 120px;
+    left: 470px;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.product-container {
+    position: relative; left: 250px;
+    width: 1400px;
+    height: 500px;
+    background-color: rgba(207, 207, 207, 0.555);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 120px; 
+}
+.product-card {
+    text-align: center;
+    width: 250px;   
+    background: white;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    padding: 15px;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.product-image:hover img {
+    transform: scale(1.1);
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.product-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.product-name a:hover {
+    color: rgba(22, 196, 196, 0.836);
+}
+
+.product-price {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* hiển thị theo cột (giá cũ trên, giá mới dưới) */
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+.old-price {
+  text-decoration: line-through; /* gạch ngang */
+  color: #888; /* màu xám nhạt */
+  font-size: 14px;
+}
+
+.sale-price {
+  color: red; /* màu đỏ nổi bật */
+  font-weight: bold;
+  font-size: 18px;
+}
+.buy {
+    background-color: #0000003f;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.buy:hover {
+    background-color: #000000;
+}
+/* Footer  */
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+}
+.footer-column1 a{
+    color: rgb(30, 47, 207);
+}
+.footer-column2 p{
+    color: black;
+    transition: ease;
+    text-align: left;
+}
+.footer-column2 p:hover{
+    color: rgb(69, 127, 235);
+}
+.footer-column3 p{
+    color: black;
+    transition: ease;
+    text-align: left;
+}
+.footer-column3 p:hover{
+    color: rgb(69, 127, 235);
+}
+.footer-column4 p{
+    color: black;
+    transition: ease;
+    text-align: left;
+}
+.footer-column p:hover{
+    color: rgb(69, 127, 235);
+}
+
